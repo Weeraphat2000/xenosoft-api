@@ -7,16 +7,7 @@ import { FirebaseOptions, initializeApp } from 'firebase/app';
 export class FirebaseService {
   public database: Database;
   constructor() {
-    const firebaseConfig = {
-      apiKey: 'AIzaSyCWAbR0dnFtauPG3QJezY50_p2DZAkl_qA',
-      authDomain: 'xenosoft-8d238.firebaseapp.com',
-      projectId: 'xenosoft-8d238',
-      storageBucket: 'xenosoft-8d238.appspot.com',
-      messagingSenderId: '394602037530',
-      appId: '1:394602037530:web:8e24c6eed10b8fca892ca3',
-      measurementId: 'G-KJ6YT2QCP4',
-      // databaseURL:
-    } as FirebaseOptions;
+    const firebaseConfig = {} as FirebaseOptions;
     const app = initializeApp(firebaseConfig);
 
     this.database = getDatabase(app);
